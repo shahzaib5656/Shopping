@@ -42,6 +42,7 @@ public class ShoppingTrolley {
     public void buyItem(Object someItem){
         
         this.items.add(someItem);
+        System.out.println("how are you");
     }
     
  
