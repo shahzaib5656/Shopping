@@ -32,7 +32,7 @@ public class ShoppingTrolley {
     public ShoppingTrolley(){
         
         items = new ArrayList<Object>();
-        //how are you
+        //how are yo
     }
     
     /**
