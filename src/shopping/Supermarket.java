@@ -20,6 +20,13 @@ public class Supermarket {
         /*
           YOU MUST COMPLETE THIS CODE - REMEMBER TO COMMENT WHAT YOU HAVE DONE AND TRY TO MODULARISE YOUR CODE (i.e. create your own methods)
         */
+        
+          
+        // Create a RetailItem object
+        RetailItems item = new RetailItems("Apple", 1.99);
+
+        // Display the item details using the toString method
+        System.out.println(item.toString());
     }
     
 }
