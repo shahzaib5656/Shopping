@@ -22,11 +22,17 @@ public class Supermarket {
         */
         
           
-        // Create a RetailItem object
+        // created a RetailItem object
         RetailItems item = new RetailItems("Apple", 1.99);
 
-        // Display the item details using the toString method
+        // Displaied the item details using the toString method
         System.out.println(item.toString());
+        
+        //create a foodItem
+        FoodItems milk  = new FoodItems("Milk",2.67,"2025-06-15");
+        
+        //printing it
+        System.out.println(milk.toString());
     }
     
 }
