@@ -33,6 +33,14 @@ public class Supermarket {
         
         //printing it
         System.out.println(milk.toString());
+        
+        //create a householdoitem
+        HouseHoldItem soap = new HouseHoldItem("soap",1.2,0.25);
+                
+        //printing it 
+        System.out.println(soap.toString());
+        System.out.println(soap.getDescription());
+        System.out.println(soap.getDescription("g"));
     }
     
 }
