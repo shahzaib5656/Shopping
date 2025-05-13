@@ -6,6 +6,7 @@
 package shopping;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * A simple ShoppingTrolley
@@ -42,10 +43,11 @@ public class ShoppingTrolley {
     public void buyItem(Object someItem){
         
         this.items.add(someItem);
-        System.out.println("how are you");
+       System.out.println(someItem + " has been added to your trolley.");
     }
     
- 
+    
+   
     /**
      * create a formatted String containing all the items in the ShoppingTrolley
      * @return the formatted String
@@ -64,4 +66,6 @@ public class ShoppingTrolley {
         
         return itemList;
     }
+
+   
 }
