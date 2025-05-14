@@ -56,13 +56,24 @@ public class ShoppingTrolley {
     public String emptyTrolley(){
         
         String itemList = "";
+        double total =0.0;
         
         for(Object item: this.items){
             
             itemList = itemList + item.toString() + "\n";
+            
+            // check class and add up price
+            if (item instanceof RetailItems) {
+                RetailItems ri = (RetailItems) item;
+                total += ri.getPrice();// inherited method
+            }
         }
         
+        //
+        
         this.items.clear();
+        
+        itemList += String.format("TOTAL DUE: £%.2f", total);
         
         return itemList;
     }
