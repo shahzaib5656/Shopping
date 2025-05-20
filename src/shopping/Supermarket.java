@@ -48,7 +48,7 @@ public class Supermarket {
                 case "4":
                     shopping = false;
                     break;
-
+                    
                 default:
                     System.out.println("Invalid option. Please try again.");
             }
@@ -57,8 +57,14 @@ public class Supermarket {
         // done shopping, now print out what is in the trolley
         System.out.println("\n Your Shopping Trolley:");
         System.out.println(myBag.emptyTrolley());
+        
     }
 
+  
+
+    
+    
+    
     //  method to handle quantity input and  add item to trolley
     public static void buyItem(Scanner input, ShoppingTrolley myBag, Object item) {
         System.out.print("How many would you like to buy? ");
@@ -75,5 +81,9 @@ public class Supermarket {
         } catch (NumberFormatException e) {
             System.out.println(" Invalid number. Try again.");
         }
+        
     }
+    
+   
+
 }

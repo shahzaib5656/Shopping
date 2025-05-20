@@ -36,4 +36,20 @@ public class RetailItems{
         return name + "," +  price;
         
     }
+    
+    //will display items 
+    public String displayDetails() {
+    return "Item: " + name;
+}
+    
+    // overloading of item displayed
+    public String displayDetails(boolean showPrice) {
+    if (showPrice) {
+        return "Item: " + name + " | Price: €" + price;
+    } else {
+        return "Item: " + name;
+    }
+}
+
+
 }
